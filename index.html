@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disaster Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <nav>
+    <div class="magnet">
+      <div class="logo">🌍 Disaster<span>Safe</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="magnet">Home</a></li>
+      <li>
+        <a href="#disasters" class="magnet">Disasters ▾</a>
+        <div class="dropdown">
+          <a  href="#"><span>🌊</span> Flood</a>
+          <a   href="#"><span>🔥</span> Fire</a>
+          <a href="#"><span>🌎</span> Earthquake</a>
+          <a href="#"><span>🌪️</span> Cyclone</a>
+        </div>
+      </li>
+      <li>
+        <a href="#guides" class="magnet">Guides ▾</a>
+        <div class="dropdown">
+          <a href="#">🏫 Schools</a>
+          <a href="#">🎓 Colleges</a>
+          <a href="#">🏙️ Public Places</a>
+        </div>
+      </li>
+      <li><a href="#resources" class="magnet">Resources</a></li>
+      <li><a href="#contact" class="magnet">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+<section id="home">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="home-content">
+    <h1 class="hvr">Stay Safe, Stay Prepared 🌍</h1>
+    <p>Learn how to react during natural disasters and connect with NGOs instantly.</p>
+  </div>
+</section>
+
+  <!-- Disasters -->
+  <section id="disasters">
+    <h2 class="Mvp">Types of Disasters</h2>
+    <div class="cards">
+      <div class="disaster-card" >
+        <span>🌊</span>
+        <h3>Floods</h3>
+        <p>Precautions and safety tips to stay safe during floods.</p>
+      </div>
+      <div class="disaster-card"  >
+        <span>🔥</span>
+        <h3>Fires</h3>
+        <p>How to react quickly and minimize fire hazards.</p>
+      </div>
+      <div class="disaster-card">
+        <span>🌎</span>
+        <h3>Earthquakes</h3>
+        <p>Drop, Cover, Hold On – learn earthquake drills.</p>
+      </div>
+      <div class="disaster-card">
+        <span>🌪️</span>
+        <h3>Cyclones</h3>
+        <p>Emergency measures and evacuation planning tips.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section id="guides">
+    <h2>Guides & Preparedness</h2>
+    <div class="timeline">
+      <div class="guide-container left">
+        <div class="guide-box">
+          <h3>🏫 Schools</h3>
+          <p>Evacuation drills, safe assembly zones, and first-aid training for students.</p>
+        </div>
+      </div>
+      <div class="guide-container right">
+        <div class="guide-box">
+          <h3>🎓 Colleges</h3>
+          <p>Emergency committees, awareness campaigns, and shelter-in-place strategies.</p>
+        </div>
+      </div>
+      <div class="guide-container left">
+        <div class="guide-box">
+          <h3>🏙️ Public Places</h3>
+          <p>Emergency exits, communication protocols, and quick response training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <p style="text-align:center;">Download disaster management guides, posters, and survival kits.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message to NGOs" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
